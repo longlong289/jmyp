@@ -1,0 +1,1 @@
+$(function(){$.ajax({url:"../php/banner.php"}).then(function(n){let e=JSON.parse(n);console.log(n);let a=$("new_dadmall_content");$.each(e,function(n,e){a+=`<li><a href="#"><img src=${e.src}></a></li>`})})});
